@@ -33,6 +33,7 @@
 import { ref, reactive, onMounted } from 'vue'
 import ChatComponent from './components/ChatComponent.vue'
 import Hub from './Hub'
+import palavrasProibidasPorIdioma from './palavras-proibidas.js'
 
 export default {
   name: 'LayoutDefault',
@@ -49,8 +50,41 @@ export default {
     });
     let hub = new Hub();
 
+    // Função de filtro APRIMORADA e MULTILÍNGUE
+    function contemPalavraProibida(texto) {
+      const textoNormalizado = texto
+        .toLowerCase()
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .replace(/4|@/g, 'a')
+        .replace(/3/g, 'e')
+        .replace(/1|!/g, 'i')
+        .replace(/0/g, 'o')
+        .replace(/\s+/g, '')
+        .replace(/(.)\1+/g, '$1');
+
+      // Itera sobre cada idioma no nosso objeto de palavras
+      for (const lang in palavrasProibidasPorIdioma) {
+        const listaDePalavras = palavrasProibidasPorIdioma[lang];
+        
+        // Se encontrar uma palavra proibida em qualquer um dos idiomas, retorna true
+        if (listaDePalavras.some(palavra => textoNormalizado.includes(palavra))) {
+          return true;
+        }
+      }
+      
+      // Se não encontrou em nenhum idioma, retorna false
+      return false;
+    }
+
     function send() {
-      if (message.body == "") return;
+      if (message.body.trim() === "") return;
+
+      if (contemPalavraProibida(message.body)) {
+        alert("Sua mensagem contém palavras impróprias e não pode ser enviada.");
+        return;
+      }
+
       hub.connection.invoke("SendMessage", message);
       message.body = "";
     }
