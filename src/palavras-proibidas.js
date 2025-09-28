@@ -1,53 +1,68 @@
 export default {
-    // =====================================================================
-    //                              PORTUGU�S                             
-    // =====================================================================
-    pt: [
-        'arrombado', 'arrombada', 'babaca', 'babaovo', 'baitola', 'bicha',
-        'bixa', 'bo�al', 'boceta', 'boiola', 'boquete', 'bosta',
-        'buceta', 'bunda', 'burra', 'burro', 'cacete', 'caga',
-        'canalha', 'caralho', 'chifrudo', 'chochota', 'chupada', 'cretina',
-        'cretino', 'cuz�o', 'cuzuda', 'cuzao', 'debil', 'd�bil',
-        'defunto', 'demonio', 'denegrir', 'escrota', 'escroto', 'estupida',
-        'est�pido', 'fascista', 'fedida', 'fedor', 'foda', 'fodida',
-        'fodido', 'fudendo', 'gay', 'idiota', 'imbecil', 'lazarento',
-        'leproso', 'l�sbica', 'macaca', 'macaco', 'merda', 'mijo',
-        'mongol', 'nazista', 'otaria', 'otario', 'pau', 'peido',
-        'p�nis', 'pentelho', 'perereca', 'pica', 'pilantra', 'pinto',
-        'piranha', 'piroca', 'porra', 'prostituta', 'prostituto', 'punheta',
-        'puta', 'puto', 'rab�o', 'rabo', 'rabuda', 'retardada',
-        'retardado', 'sacana', 'safada', 'safado', 'siririca', 'tarada',
-        'tarado', 'tesuda', 'tesudo', 'trouxa', 'vaca', 'vadia',
-        'vagabunda', 'vagabundo', 'viadagem', 'viado', 'xana', 'xoxota'
-    ],
-
-    // =====================================================================
-    //                                INGL�S                              
-    // =====================================================================
-    en: [
-        'anal', 'anus', 'arse', 'ass', 'assfucker', 'asshole',
-        'bastard', 'bitch', 'bloody', 'bollock', 'boob', 'bugger',
-        'bum', 'butt', 'clit', 'cock', 'crap', 'cunt',
-        'damn', 'dick', 'dildo', 'dyke', 'fag', 'faggot',
-        'fanny', 'fart', 'felch', 'fuck', 'fucked', 'fucker',
-        'fucking', 'hell', 'jerk', 'jizz', 'labia', 'muff',
-        'nigger', 'nigga', 'penis', 'piss', 'poop', 'prick',
-        'pussy', 'queer', 'scrotum', 'sex', 'shit', 'shite',
-        'slut', 'smegma', 'spunk', 'tit', 'turd', 'twat',
-        'vagina', 'wank', 'whore'
-    ],
-
-    // =====================================================================
-    //                               ESPANHOL                             
-    // =====================================================================
-    es: [
-        'anal', 'ano', 'boludo', 'cabron', 'caca', 'cago',
-        'cajeta', 'capullo', 'carajo', 'choto', 'cipote', 'clitoris',
-        'coger', 'cojon', 'cojones', 'cono', 'co�o', 'culo',
-        'follar', 'forro', 'gilipollas', 'huevon', 'joder', 'jodete',
-        'marica', 'maricon', 'mierda', 'ojete', 'orto', 'paja',
-        'panocha', 'pendejo', 'pene', 'picha', 'pito', 'polla',
-        'poronga', 'puta', 'puto', 'raja', 'teta', 'tonto',
-        'verga'
-    ]
+  // =====================================================================
+  // ||        PALAVRAS DE BLOQUEIO DIRETO (CAMADA 1 - PORTUGUÊS)       ||
+  // =====================================================================
+  pt_direto: [
+    'alienado', 'amador', 'animaldeteta', 'anormal', 'anus', 'ânus', 'ariano',
+    'arregassado', 'arrombada', 'arrombadas', 'arrombado', 'arrombador',
+    'babaca', 'babaovo', 'bacurinha', 'baianada', 'baitola', 'baleia',
+    'bastardo', 'benfiquista', 'biba', 'bicha', 'bichona', 'biscate',
+    'bissexual', 'bixa', 'boazuda', 'bobo', 'boçal', 'boceta', 'boco',
+    'boiola', 'bolagato', 'bolcinha', 'bolsinha', 'boquete', 'boqueteira',
+    'boqueteiro', 'bosta', 'bostana', 'branquelo', 'buceta', 'bucetao',
+    'bucetasso', 'bucetinha', 'bumbum', 'bunda', 'bundao', 'bunduda',
+    'burra', 'burro', 'cabaco', 'cacete', 'cadela', 'cadelona', 'cafona',
+    'cagado', 'cagalhao', 'cagao', 'cagão', 'cagona', 'cagar', 'cambista',
+    'camisinha', 'canalha', 'canceroso', 'capiroto', 'carai de asa', 'caralha',
+    'caralho', 'caralhudo', 'cassete', 'catraia', 'cepo', 'chavasca',
+    'checheca', 'chereca', 'chibio', 'chibumba', 'chifruda', 'chifrudo',
+    'chochota', 'chota', 'chupada', 'chupador', 'chupadora', 'chupar',
+    'chupeta', 'clitoris', 'clitóris', 'cocaina', 'cocaína', 'coco',
+    'cocodrilo', 'cocozento', 'cocô', 'coito', 'comer', 'comunista',
+    'consolo', 'corna', 'cornagem', 'corno', 'cornuda', 'cornudo',
+    'corrupta', 'corrupto', 'coxo', 'cretina', 'cretino', 'criolo',
+    'crioulo', 'cu', 'cú', 'culhao', 'culhão', 'curalho', 'cuzao',
+    'cuzão', 'cuzinho', 'cuzuda', 'cuzudo', 'dar o rabo', 'debil',
+    'debilmental', 'debiloide', 'deficiente', 'demente', 'demonio',
+    'demônio', 'denegrir', 'desgracado', 'drogado', 'eguenorante', 'endemoniado',
+    'energumeno', 'enfianocu', 'engolerola', 'escrota', 'escroto', 'esdruxulo',
+    'esporra', 'esporrada', 'esporrado', 'estigalhado', 'estrume', 'estupida',
+    'estúpida', 'estupido', 'estúpido', 'facista', 'fanatico', 'fanático',
+    'fascista', 'fdp', 'fecal', 'fedida', 'fedido', 'fedor', 'fedorenta',
+    'feia', 'feio', 'felacao', 'felação', 'fidumaegua', 'filha da puta',
+    'filhodaputa', 'fiofo', 'foda', 'foda-se', 'fodendo', 'foder',
+    'fudido', 'fulera', 'fornica', 'fornicada', 'frango assado', 'fudendo',
+    'gaiato', 'galinha', 'gambiarra', 'gnu', 'goianada', 'gonorreia',
+    'gonorréia', 'gordoescroto', 'gozada', 'gozar', 'herege', 'heroína',
+    'heterosexual', 'homem gay', 'homoerótico', 'homosexual', 'homossexual',
+    'idiota', 'idiotice', 'ignorante', 'imbecil', 'imundo', 'inascivel',
+    'inferno', 'inseto', 'invertebrado', 'iscrota', 'iscroto', 'jacu',
+    'judiar', 'jegue', 'jumento', 'kct', 'ku', 'lazarento', 'leprosa',
+    'leproso', 'lerdo', 'lesado', 'lesbica', 'lésbica', 'lesma', 'lezado',
+    'limpezaanal', 'lixo', 'lolita', 'lombriga', 'macaca', 'macaco',
+    'machona', 'macumbeiro', 'malandro', 'maluco', 'mama', 'maneta',
+    'marginal', 'masturba', 'meleca', 'meliante', 'merda', 'merdao',
+    'meretriz', 'mijada', 'mijado', 'mijo', 'miolodecu', 'mocorongo',
+    'mondronga', 'mondrongo', 'mongol', 'mongoloide', 'montedemerda', 'morfetico',
+    'mulambo', 'mulata', 'mulato', 'n00b', 'naba', 'nadega', 'nádega',
+    'nazista', 'nerd', 'newbie', 'nhaca', 'ninho de rola', 'nojeira',
+    'nojenta', 'nojento', 'ogro', 'olhodocu', 'otaria', 'otario', 'otária',
+    'otário', 'palhaco', 'panaca', 'paspalho', 'paunocu', 'pau', 'peidar',
+    'peido', 'peidorreiro', 'pemba', 'pênis', 'pentelha', 'pentelho',
+    'perereca', 'periquita', 'perneta', 'pica', 'pilantra', 'pimenteira',
+    'pinto', 'pintudo', 'piranha', 'piroca', 'pistoleira', 'pivete', 'porra',
+    'prequito', 'priquito', 'prostibulo', 'prostituta', 'punheta', 'punheteiro',
+    'puta', 'puta que pariu', 'putaria', 'putas', 'putinha', 'quasimodo',
+    'quenga', 'rabao', 'rabão', 'rabo', 'rabuda', 'rabudo', 'rapariga',
+    'retardada', 'retardado', 'rusguento', 'saca-rola', 'sacanagem', 'saco',
+    'safada', 'safado', 'sanguesuga', 'sapatao', 'sapatão', 'sirica',
+    'siririca', 'sotravesti', 'suga pinto', 'sujo', 'suruba', 'tapado',
+    'tarada', 'tarado', 'tesao', 'tesuda', 'tesudo', 'tetuda', 'tetudo',
+    'tosco', 'transar', 'travesti', 'traveco', 'trepadeira', 'troglodita',
+    'trouxa', 'tupiniquim', 'urubu', 'vaca', 'vadia', 'vagabunda',
+    'vagabundo', 'vagina', 'vaisefuder', 'vaitomarnocu', 'vascaino', 'veado',
+    'verme', 'viado', 'vibrador', 'xabasca', 'xana', 'xaninha', 'xavasca',
+    'xereca', 'xexeca', 'xibio', 'xochota', 'xoxota', 'xupetinha',
+    'zebuceta', 'ziguizira', 'zoiudo'
+  ]
 };
