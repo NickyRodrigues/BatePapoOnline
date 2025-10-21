@@ -34,8 +34,3 @@ A aplicação utiliza uma **biblioteca de Inteligência Artificial** capaz de **
 - 🕒 Histórico e horário das mensagens  
 - 🧹 Moderação automática e transparente  
 - 📱 Interface responsiva e intuitiva  
-
----
-
-## 🧩 Estrutura do Projeto
-
